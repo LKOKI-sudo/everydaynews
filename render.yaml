@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: the-brief
+    runtime: python
+    plan: 0.5c-512mb
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn server:application --bind 0.0.0.0:$PORT --workers 1 --threads 8 --timeout 60 --access-logfile - --error-logfile -
+    healthCheckPath: /healthz

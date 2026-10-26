@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f5f1">
+  <meta name="description" content="A quieter way to keep up. Technology and politics, summarized from trusted news sources.">
+  <title>The Brief — A little less noise. A lot more perspective.</title>
+  <script src="theme.js"></script>
+  <link rel="stylesheet" href="style.css"><script src="reader.js" defer></script><script src="app.js" defer></script>
+</head>
+<body>
+  <header class="header wrap">
+    <a class="brand" href="./" aria-label="The Brief home"><span class="brand-mark">b<span>.</span></span>the brief<span class="brand-dot">.</span></a>
+    <div class="header-note">A little less noise.<br><strong>A lot more perspective.</strong></div>
+    <div class="header-actions"><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false"><svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 13.2A8.5 8.5 0 0 1 10.8 3.5a8.5 8.5 0 1 0 9.7 9.7Z"/></svg><svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg><span id="theme-label">Dark mode</span></button><button class="saved-button" id="saved-button"><span aria-hidden="true">♧</span> Saved <span class="saved-count" id="saved-count">0</span></button></div>
+  </header>
+  <main class="wrap">
+    <div class="edition-line"><span id="edition-date"></span><span><i class="green-dot"></i> YOUR DAILY PERSPECTIVE</span></div>
+    <section class="intro">
+      <div><div class="eyebrow">STAY CURIOUS. STAY INFORMED.</div><h1>The world moves fast.<br>Get the <em>short version.</em></h1><p>Technology and politics. The stories that matter,<br class="desktop-break"> summarized so you can get on with your day.</p></div>
+      <div class="edition-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="art-center">b<span>.</span></div><span class="art-label art-label-one">TECHNOLOGY</span><span class="art-label art-label-two">POLITICS</span><span class="orbit-dot"></span></div>
+    </section>
+    <section class="brief-note"><span class="spark" aria-hidden="true">✳</span><div><strong>Your world, in fewer words.</strong><span> Short reads. Original sources. A clearer picture.</span></div><span class="note-tag">THE DAILY BRIEF</span></section>
+    <div class="toolbar"><nav aria-label="News categories"><button class="tab active" data-filter="all" aria-pressed="true">All stories <span id="all-count">0</span></button><button class="tab" data-filter="technology" aria-pressed="false">Technology</button><button class="tab" data-filter="politics" aria-pressed="false">Politics</button></nav><label class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input id="search" type="search" placeholder="Find a story…" aria-label="Search stories"></label></div>
+    <div class="reader-controls"><label>Politics coverage <select id="region"><option value="all">All regions</option><option value="us">United States</option><option value="uk">United Kingdom</option><option value="world">International</option></select></label><label>Reading view <select id="reading-view"><option value="all">All stories</option><option value="new">Since last visit</option><option value="unread">Unread stories</option><option value="brief">Five-minute briefing</option></select></label><label class="auto-control"><input type="checkbox" id="auto-update" checked> Automatic updates</label></div>
+    <div class="reading-summary"><span id="reading-summary" role="status"></span><span id="next-update"></span></div>
+    <div class="priority-toolbar"><div class="priority-filters" role="group" aria-label="Filter by importance"><span class="priority-label">YOUR READING PRIORITY</span><button class="priority-filter active" data-priority="all" aria-pressed="true">Everything</button><button class="priority-filter" data-priority="critical" aria-pressed="false"><i class="priority-dot critical"></i>Critical</button><button class="priority-filter" data-priority="worth-knowing" aria-pressed="false"><i class="priority-dot worth-knowing"></i>Worth knowing</button><button class="priority-filter" data-priority="interesting" aria-pressed="false"><i class="priority-dot interesting"></i>Interesting</button></div><p class="priority-help">Automatic labels based on headlines; importance can vary.</p></div>
+    <section class="news-area" aria-labelledby="section-title"><div class="section-heading"><h2 id="section-title">The latest<span>.</span></h2><div class="update-area"><span id="status" role="status" aria-live="polite">Connecting to sources…</span><button id="refresh" title="Refresh news" aria-label="Refresh news">↻</button></div></div><div id="notice" class="notice" hidden></div><div id="stories" class="stories" aria-live="polite"></div><div id="empty" class="empty" hidden><div class="empty-icon">↗</div><h3 id="empty-title">A moment of quiet.</h3><p id="empty-message"></p><button class="primary-button" id="retry">Try again <span>↗</span></button></div></section>
+    <section class="closing"><span class="small-brand">b.</span><div><h3>Informed. Not overwhelmed.</h3><p>A few minutes here. More time for everything else.</p></div><span class="closing-star" aria-hidden="true">✳</span></section>
+  </main>
+  <footer class="wrap"><span>© <span id="year"></span> The Brief</span><span>Publisher summaries. Always linked to the source.</span><a href="https://feeds.bbci.co.uk/news/rss.xml" target="_blank" rel="noopener noreferrer">Powered by open news feeds ↗</a></footer>
+</body>
+</html>
